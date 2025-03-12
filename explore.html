@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @media(min-width: 1201px){
+            .choose-title{
+                text-align: center;
+
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+
+                color: #D98324;
+            }
+            .title-text{
+                text-align: center;
+
+                font-family: "Outfit", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 200;
+                font-style: normal;
+
+                color: #443627;
+            }
+            body{
+                background-color: #EFDCAB;
+            }
+
+            .title-container{
+                padding-top: 100px;
+            }
+            .pictures-container{
+                display: flex;
+                gap: 50px;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+            .shawarma{
+                border: 5px #D98324 solid;
+            }
+            .ChickenTenders{
+                border: 5px #D98324 solid;
+            }
+            .button1, .button2{
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .buttons-container{
+                display: inline;
+            }
+            footer{
+                padding-top: 180px;
+                text-align: center;
+                color: #D98324;
+            }
+            .go-back{
+                color: #D98324;
+                border: 10px #443627 solid;
+                background-color: #443627;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="Go-Back-container">
+            <a class="go-back" href="./index.html">Go Back</a></div>
+        <div class="title-container">
+            <h1 class="choose-title">Choose the Recipe</h1>
+        </div>
+        <div class="title-text-container">
+            <div class="title-text-class">
+                <h2 class="title-text">At the moment these are the recipes available <span><br>Click on the picture to select.</span></h2>
+            </div>
+        </div>
+
+        <div class="pictures-container">
+            <div class="shawarma-recipe">
+                <div class="Shawarma-box">       <!--Picture Location-->
+                    <a href="./recipes/shawarma.html"><img class="shawarma" src="./assets/shawarma_freepik.jpg" width="170px" alt="Image by 8photo on Freepik"/></a> <!--Change the picture-->
+                </div>
+            </div>
+            <div class="ChickenTenders-recipe">
+                <div class="ChickenTenders-box">                                                 <!--Picture Location-->
+                    <a href="./recipes/chickentenders.html"> <img class="ChickenTenders" src="./assets/Chicken_tenders.jpg" width="170px" alt="Image by 8photo on Freepik"/></a> <!--Change the picture-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer><span style="text-shadow: 0 0 10px #D98324;">Website by Custom Projects</span> | <a href="https://www.freepik.com/author/8photo">Images by 8photo on Freepik</a></footer>
+</body>
+</html>

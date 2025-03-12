@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawarma Recipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rowdies:wght@300;400;700&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+    <style>
+        @media (min-width:1201px){
+
+            .picture-shawarma-box{
+                display: flex;
+                justify-content: center;
+            }
+            .picture-shawarma{
+                border: 5px solid #A94438;
+                box-shadow: 0 0 10px #A94438;
+            }
+            .title-shawarma-box > .title{
+                color: #A94438;
+                text-shadow: 0 0 10px #A94438;
+                text-transform: uppercase;
+                text-align: center;
+
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .title-shawarma-box{
+                background-color: #D7B19D;
+                padding-top: 10px;
+                border-bottom: 3px solid #D7B19D;
+            }
+
+            .text-shawarma{
+                color: #E38B29;
+                font-family: "Spicy Rice", serif;
+                font-weight: 400;
+                font-style: normal;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: large;
+
+                background-color: #D7B19D;
+            }
+            .picture-shawarma-box{
+                background-color: #D7B19D;
+                padding-top: 10px;
+            }
+            body{
+                margin: 0;
+                background-color: #D7B19D;
+            }
+            .black-bar{
+                border: 5px solid #865439;
+            }
+            .second-container{
+                background-color: #FCDEC0;
+                margin: 0;
+                padding-top: 10px;
+            }
+            .ingredients-title > .title{
+                color: #ffffff;
+                text-shadow: 4px 0 9px #B4846C;
+            }
+            .ingredients-title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+            }
+            .marinade-title > .title{
+                color: #B3541E;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .marinade-title{
+                padding-left: 6px;
+            }
+            .shawarma-recipe-title{
+                color: #A94438;
+            }
+            .marinadelist{
+                color: #92461b;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .shawarma-title > .title{
+                color: #7E370C;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .shawarma-title{
+                padding-left: 6px;
+            }
+            .shawarmalist{
+                color: #542509;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .sauce-title > .title{
+                color: #b8a10c;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .sauce-title{
+                padding-left: 6px;
+            }
+            .saucelist{
+                color: #746927;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .instruciton-title > .title{
+                color: #ffffff;
+                text-shadow: 4px 0 9px #B4846C;
+            }
+            .instruciton-title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+            }
+            .marinate-title > .title{
+                color: #B3541E;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .marinate-title{
+                padding-left: 6px;
+            }
+            .marinate{
+                color: #E07B39;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .chicken-title > .title{
+                color: #92461b;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            #list-color{
+                color: #E07B39;
+            }
+            .chicken-title{
+                padding-left: 6px;
+            }
+            .chicken{
+                color: #92461b;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .assemble-title > .title{
+                color: #7E370C;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .assemble{
+                color: #53280d;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .footer{
+                color: white;
+                text-align: center;
+            }
+        }
+        @media (min-width:319px) and (max-width:1200px){
+
+            .picture-shawarma-box{
+                display: flex;
+                justify-content: center;
+            }
+            .picture-shawarma{
+                border: 5px solid #A94438;
+                box-shadow: 0 0 10px #A94438;
+            }
+            .title-shawarma-box > .title{
+                color: #A94438;
+                text-shadow: 0 0 10px #A94438;
+                text-transform: uppercase;
+                text-align: center;
+
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .title-shawarma-box{
+                background-color: #D7B19D;
+                padding-top: 10px;
+                border-bottom: 3px solid #D7B19D;
+            }
+
+            .text-shawarma{
+                color: #E38B29;
+                font-family: "Spicy Rice", serif;
+                font-weight: 400;
+                font-style: normal;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: large;
+
+                background-color: #D7B19D;
+            }
+            .picture-shawarma-box{
+                background-color: #D7B19D;
+                padding-top: 10px;
+            }
+            body{
+                margin: 0;
+                background-color: #D7B19D;
+            }
+            .black-bar{
+                border: 5px solid #865439;
+            }
+            .second-container{
+                background-color: #FCDEC0;
+                margin: 0;
+                padding-top: 10px;
+            }
+            .ingredients-title > .title{
+                color: #ffffff;
+                text-shadow: 4px 0 9px #B4846C;
+            }
+            .ingredients-title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+            }
+            .marinade-title > .title{
+                color: #B3541E;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .marinade-title{
+                padding-left: 6px;
+            }
+            .shawarma-recipe-title{
+                color: #A94438;
+            }
+            .marinadelist{
+                color: #92461b;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .shawarma-title > .title{
+                color: #7E370C;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .shawarma-title{
+                padding-left: 6px;
+            }
+            .shawarmalist{
+                color: #542509;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .sauce-title > .title{
+                color: #b8a10c;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .sauce-title{
+                padding-left: 6px;
+            }
+            .saucelist{
+                color: #746927;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .instruciton-title > .title{
+                color: #ffffff;
+                text-shadow: 4px 0 9px #B4846C;
+            }
+            .instruciton-title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+            }
+            .marinate-title > .title{
+                color: #B3541E;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .marinate-title{
+                padding-left: 6px;
+            }
+            .marinate{
+                color: #E07B39;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .chicken-title > .title{
+                color: #92461b;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            #list-color{
+                color: #E07B39;
+            }
+            .chicken-title{
+                padding-left: 6px;
+            }
+            .chicken{
+                color: #92461b;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .assemble-title > .title{
+                color: #7E370C;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .assemble{
+                color: #53280d;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            .footer{
+                color: white;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-container-inside">
+            <div class="picture-shawarma-box">
+                <img class="picture-shawarma" src="../assets/shawarma_freepik.jpg" width="270px" alt="Image by 8photo on Freepik"/> <!--Change the picture-->
+            </div>
+            <div class="title-shawarma-box">
+                <h1 class="title">Shawarma Recipe</h1>
+            <div class="text-shawarma-container"> 
+                <div class="text-shawarma-inside">
+                    <p class="text-shawarma">Try the <span class="shawarma-recipe-title">Shawarma Recipe</span> now.</p>
+                </div>
+            </div> 
+        </div>
+            <div class="black-bar">
+            </div>
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="second-container-inside">
+            <div class="ingredients-container">
+                <div class="ingredients-title-container">
+                    <div class="ingredients-title">
+                        <h2 class="title">Ingredients</h2>
+                    </div>
+                </div>
+                <div class="marinade-container">
+                    <div class="marinade-title-container">
+                        <div class="marinade-title">
+                            <h3 class="title">For the Marinade:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="ingredients-marinade-container">
+                <div class="marinade-list-container">
+                    <div class="marinade-list">
+                        <ul class="marinadelist">
+                            <li>1 cup plain yogurt</li>
+                            <li>3 tbsp olive oil</li>
+                            <li>1 tbsp lemon juice</li>
+                            <li>1 tbsp ground cumin</li>
+                            <li>1 tbsp ground paprika</li>
+                            <li>1 tsp ground turmeric</li>
+                            <li>1 tsp ground coriander</li>
+                            <li>1 tsp ground cinnamon</li>
+                            <li>4 garlic cloves, minced</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>2 lbs chicken thighs (or chicken breast, if preferred)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="shawarma-container">
+                    <div class="shawarma-title-container">
+                        <div class="shawarma-title">
+                        <h3 class="title">For the Shawarma:</h3>
+                    </div>
+                </div>
+                </div>
+                <div class="ingredients-shawarma-container">
+                <div class="shawarma-list-container">
+                    <div class="shawarma-list">
+                        <ul class="shawarmalist">
+                            <li>4 pita bread or flatbreads</li>
+                            <li>1 onion, thinly sliced</li>
+                            <li>Fresh parsley, chopped</li>
+                            <li>Sliced tomatoes and cucumbers</li>
+                            <li>Pickles <span style="color: rgb(26, 144, 56);">(optional)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sauce-container">
+                <div class="sauce-title-container">
+                    <div class="sauce-title">
+                    <h3 class="title">For the Garlic Sauce (Tahini Sauce):</h3>
+                </div>
+            </div>
+            </div>
+            <div class="ingredients-sauce-container">
+            <div class="sauce-list-container">
+                <div class="sauce-list">
+                    <ul class="saucelist">
+                        <li>1/2 cup tahini</li>
+                        <li>1/4 cup lemon juice</li>
+                        <li>2 tbsp olive oil</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>Salt and water to thin (as needed)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="instructions-container">
+            <div class="instruction-title-container">
+                <div class="instruciton-title">
+                    <h2 class="title">Instructions</h2>
+                </div>
+            </div>
+            <div class="marinate-container">
+                <div class="marinate-title-container">
+                    <div class="marinate-title">
+                    <h3 class="title"><span id="list-color">1.</span> Marinate the Chicken:</h3>
+                </div>
+            </div>
+            </div>
+            <div class="instructions-marinate-container">
+                <div class="marinate-instructions-container">
+                    <div class="marinate-instructions">
+                    <ul class="marinate">
+                        <li>In a bowl, combine yogurt, olive oil, lemon juice, cumin, paprika, turmeric, coriander, cinnamon, garlic, salt, and pepper. Mix until well combined.</li>
+                        <li>Add the chicken to the marinade and coat it well. Cover and refrigerate for at least 2 hours, or overnight for maximum flavor.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="chicken-container">
+                <div class="chicken-title-container">
+                    <div class="chicken-title">
+                    <h3 class="title"><span id="list-color">2.</span> Cook the Chicken:</h3>
+                </div>
+            </div>
+            </div>
+            <div class="instructions-chicken-container">
+                <div class="chicken-instructions-container">
+                    <div class="chicken-instructions">
+                    <ul class="chicken">
+                        <li>Heat a grill pan or skillet over medium heat.</li>
+                        <li>Cook the chicken for about 6-7 minutes per side until fully cooked and browned on the outside (internal temperature should reach 165°F or 75°C).</li>
+                        <li>Once cooked, let the chicken rest for a few minutes, then slice it into thin strips.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="assemble-container">
+                <div class="assemble-title-container">
+                    <div class="assemble-title">
+                    <h3 class="title"><span id="list-color">3.</span> Assemble the Shawarma:</h3>
+                </div>
+            </div>
+            </div>
+            <div class="instructions-assemble-container">
+                <div class="assemble-instructions-container">
+                    <div class="assemble-instructions">
+                    <ul class="assemble">
+                        <li>Warm the pita or flatbread in a pan or microwave.</li>
+                        <li>Add a layer of chicken slices, followed by onion, parsley, tomatoes, cucumbers, and pickles (if desired).</li>
+                        <li>Drizzle with garlic sauce or tahini sauce.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer"><footer class="footer">
+    <p>&copy; 2025 Custom Projects. All rights reserved. | ChatGPT Recipe.</p> <!--Change the footer-->
+</footer>
+</div>
+</body>
+</html>

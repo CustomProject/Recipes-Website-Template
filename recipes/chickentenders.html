@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Tenders Recipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rowdies:wght@300;400;700&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <style>
+        @media (min-width:1201px){
+            body{
+                margin: 0;
+            }
+            .chickentenders-picture{
+                display: flex;
+                justify-content: center;
+
+                padding-top: 10px;
+            }
+            .picture{
+                border: 5px solid #E07B39;
+                box-shadow: 0 0 10px #E07B39;
+            }
+            .chickentenders-picture-container{
+                background-color: #B6A28E;
+            }
+            .chickentinders-title > .title{
+                color: #E07B39;
+                text-align: center;
+
+                font-family: "Rowdies", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                text-transform: uppercase;
+            }
+            .chickentinders-up-container{
+                background-color: #B6A28E;
+
+                padding-top: 20px;
+            }
+            .chicken-tinders-text > .text{
+                color: #493628;
+                text-align: center;
+
+                font-family: "Spicy Rice", serif;
+                font-weight: 400;
+                font-style: normal;
+
+                text-transform: uppercase;
+                font-size: larger;
+            }
+            .black-line{
+                border: 7px solid #493628;
+            }
+            .chickentinders-down-container{
+                background-color: #b6a28e9e;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+            .ingredients-title > .title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+            }
+            .ingredients-title > .title{
+                color: #FF9D23;
+            }
+            .ingredients-list > .list{
+                color: #C14600;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            #optional{
+                color: rgb(26, 144, 56);
+            }
+            .instructions-title > .title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+
+                color: #be7319;
+            }
+            .prepare-chicken-title > .title{
+                color: #B3541E;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .prepare-chicken-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .bs-title > .title{
+                color: #E07A5F;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .bs-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .bc-title > .title{
+                color: #854836;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .bc-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .fc-title > .title{
+                color: #A27B5C;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .fc-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .footer{
+                background-color: #B6A28E;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        @media (min-width:319px) and (max-width:1200px){
+            body{
+                margin: 0;
+            }
+            .chickentenders-picture{
+                display: flex;
+                justify-content: center;
+
+                padding-top: 10px;
+            }
+            .picture{
+                border: 5px solid #E07B39;
+                box-shadow: 0 0 10px #E07B39;
+            }
+            .chickentenders-picture-container{
+                background-color: #B6A28E;
+            }
+            .chickentinders-title > .title{
+                color: #E07B39;
+                text-align: center;
+
+                font-family: "Rowdies", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                text-transform: uppercase;
+            }
+            .chickentinders-up-container{
+                background-color: #B6A28E;
+
+                padding-top: 20px;
+            }
+            .chicken-tinders-text > .text{
+                color: #493628;
+                text-align: center;
+
+                font-family: "Spicy Rice", serif;
+                font-weight: 400;
+                font-style: normal;
+
+                text-transform: uppercase;
+                font-size: larger;
+            }
+            .black-line{
+                border: 7px solid #493628;
+            }
+            .chickentinders-down-container{
+                background-color: #b6a28e9e;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+            .ingredients-title > .title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+            }
+            .ingredients-title > .title{
+                color: #FF9D23;
+            }
+            .ingredients-list > .list{
+                color: #C14600;
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+            }
+            #optional{
+                color: rgb(26, 144, 56);
+            }
+            .instructions-title > .title{
+                padding-left: 10px;
+                font-family: "Rowdies", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: large;
+
+                color: #be7319;
+            }
+            .prepare-chicken-title > .title{
+                color: #B3541E;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .prepare-chicken-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .bs-title > .title{
+                color: #E07A5F;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .bs-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .bc-title > .title{
+                color: #854836;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .bc-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .fc-title > .title{
+                color: #A27B5C;
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .fc-list > .list{
+                font-family: "Iansui", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: medium;
+                color: #C14600;
+            }
+            .footer{
+                background-color: #B6A28E;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                text-align: center;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-container-inside">
+            <div class="chickentenders-picture-container">
+                <div class="chickentenders-picture">
+                    <img class="picture" src="../assets/Chicken_tenders.jpg" alt="Image by 8photo on Freepik" width="270px"/>
+                </div>
+            </div>
+            <div class="chickentinders-up-container">
+                <div class="chickentinders-title">
+                    <h1 class="title">Chicken Tenders Recipe</h1>
+                </div>
+                <div class="chicken-tinders-text">
+                    <p class="text">Try the <span style="color: #E07B39 ;">Chicken Tenders Recipe</span> now.</p>
+                </div>
+                <div class="black-line">
+                </div>
+            </div>
+            <div class="chickentinders-down-container">
+                <div class="ingredients-container">
+                    <div class="ingredients-title-container">
+                        <div class="ingredients-title">
+                            <h2 class="title">Ingredients:</h2>
+                        </div>
+                    </div>
+                    <div class="ingredients-list-container">
+                        <div class="ingredients-list-inside">
+                            <div class="ingredients-list">
+                                <ul class="list">
+                                    <li>1 lb chicken breast (cut into strips)</li>
+                                    <li>1 cup flour</li>
+                                    <li>1 tsp paprika</li>
+                                    <li>1 tsp garlic powder</li>
+                                    <li>1/2 tsp salt</li>
+                                    <li>1/2 tsp black pepper</li>
+                                    <li>1/2 tsp cayenne pepper <span id="optional">(optional for spice)</span></li>
+                                    <li>2 large eggs</li>
+                                    <li>1 cup breadcrumbs (panko or regular)</li>
+                                    <li>1/2 cup grated Parmesan cheese</li>
+                                    <li>1 cup buttermilk (or regular milk)</li>
+                                    <li>Vegetable oil for frying</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="instructions-container">
+                <div class="instructions-container-inside">
+                    <div class="instructions-title-container">
+                        <div class="instructions-title">
+                            <h2 class="title">Instructions:</h2>
+                        </div>
+                    </div>
+                    <div class="prepare-chicken-container">
+                        <div class="prepare-chicken-title">
+                            <h3 class="title"><span id="list-style">1.</span> Prepare the Chicken:</h3>
+                        </div>
+                        <div class="prepare-chicken-list">
+                            <ul class="list">
+                                <li>Cut the chicken breasts into strips. If they’re thick, you can slice them into thinner pieces.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="breadingstations-container">
+                        <div class="bs-title">
+                            <h3 class="title"><span id="list-style">2.</span> Set Up Breading Stations:</h3>
+                        </div>
+                        <div class="bs-list">
+                            <ul class="list">
+                                <li>In one shallow bowl, mix together the flour, paprika, garlic powder, salt, pepper, and cayenne pepper (if using).</li>
+                                <li>In a second bowl, beat the eggs and add the buttermilk.</li>
+                                <li>In a third bowl, mix breadcrumbs and grated Parmesan cheese.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Bread-Chicken-container">
+                        <div class="bc-title">
+                            <h3 class="title"><span id="list-style">3.</span> Bread the Chicken:</h3>
+                        </div>
+                        <div class="bc-list">
+                            <ul class="list">
+                                <li>Dip each chicken strip into the flour mixture, then into the egg mixture, and finally coat it well with the breadcrumb mixture. Press lightly to ensure it sticks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fry-chicken-container">
+                        <div class="fc-title">
+                            <h3 class="title"><span id="list-style">4.</span> Fry the Chicken:</h3>
+                        </div>
+                        <div class="fc-list">
+                            <ul class="list">
+                                <li>Heat about 1 inch of vegetable oil in a deep skillet or pan over medium-high heat.</li>
+                                <li>Fry the chicken tenders in batches until golden brown and crispy (about 3-4 minutes per side).</li>
+                                <li>Once cooked, drain on paper towels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><footer class="footer">
+        <p>&copy; 2025 Custom Projects. All rights reserved. | ChatGPT Recipe.</p> <!--Change the footer-->
+    </footer>
+    </div>
+</body>
+</html>
